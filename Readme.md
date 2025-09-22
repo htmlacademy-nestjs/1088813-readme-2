@@ -1,7 +1,7 @@
 # Личный проект «Readme»
 
 * Студент: [Сергей Кузьмичев](https://up.htmlacademy.ru/nodejs-2-individual/2/user/1088813).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Поклонский](https://htmlacademy.ru/profile/id2210683).
 
 ---
 
