@@ -47,6 +47,12 @@
     },
     {
       "path": "./apps/api"
+    },
+    {
+      "path": "./apps/account-e2e"
+    },
+    {
+      "path": "./apps/account"
     }
   ]
 }
