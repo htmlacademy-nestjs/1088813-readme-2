@@ -4,6 +4,21 @@
   "include": [],
   "references": [
     {
+      "path": "../../libs/core"
+    },
+    {
+      "path": "../../libs/app/types"
+    },
+    {
+      "path": "../../libs/shared/enums"
+    },
+    {
+      "path": "../../libs/shared/rdo"
+    },
+    {
+      "path": "../../libs/helpers"
+    },
+    {
       "path": "./tsconfig.app.json"
     }
   ]

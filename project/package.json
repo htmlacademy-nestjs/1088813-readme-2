@@ -7,10 +7,16 @@
   "dependencies": {
     "@nestjs/common": "^11.0.0",
     "@nestjs/core": "^11.0.0",
+    "@nestjs/mapped-types": "*",
     "@nestjs/platform-express": "^11.0.0",
+    "@nestjs/swagger": "^11.2.0",
     "axios": "^1.6.0",
+    "bcrypt": "^6.0.0",
+    "class-transformer": "^0.5.1",
+    "dayjs": "^1.11.18",
     "reflect-metadata": "^0.1.13",
-    "rxjs": "^7.8.0"
+    "rxjs": "^7.8.0",
+    "swagger-themes": "^1.4.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.8.0",
@@ -27,9 +33,11 @@
     "@swc-node/register": "~1.9.1",
     "@swc/core": "~1.5.7",
     "@swc/helpers": "~0.5.11",
+    "@types/bcrypt": "^6.0.0",
     "@types/node": "20.19.9",
     "eslint": "^9.8.0",
     "eslint-config-prettier": "^10.0.0",
+    "jsonc-eslint-parser": "^2.1.0",
     "nx": "21.5.3",
     "prettier": "^2.6.2",
     "tslib": "^2.3.0",
@@ -40,6 +48,12 @@
   "workspaces": [
     "apps/*",
     "blog",
-    "blog-e2e"
+    "blog-e2e",
+    "libs/app/types",
+    "libs/helpers",
+    "libs/app/constants",
+    "libs/core",
+    "libs/shared/rdo",
+    "libs/shared/enums"
   ]
 }
