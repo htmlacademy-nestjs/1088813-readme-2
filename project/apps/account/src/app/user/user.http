@@ -1,0 +1,22 @@
+# Пользователи
+## Получить пользователя по id
+GET http://localhost:3000/api/user/byId/73950e0e-ca17-4a50-af3a-939d55e39397
+Content-Type: application/json
+
+###
+
+## Получить пользователя по email
+GET http://localhost:3000/api/user/byEmail/kuzMich@mail.ru
+Content-Type: application/json
+
+###
+
+## Обновить пользователя по id
+PATCH http://localhost:3000/api/user/update/953a6ead-137c-4da1-9544-249eb1e930c0
+Content-Type: application/json
+
+{
+  "lastName": "Michh"
+}
+
+###
