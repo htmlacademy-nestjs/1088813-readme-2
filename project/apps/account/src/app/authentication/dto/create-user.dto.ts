@@ -20,7 +20,7 @@ export class CreateUserDto {
   public lastName: string;
 
   @ApiProperty({
-    description: 'User avatar path',
+    description: 'User avatar path ',
     example: '/images/user.png',
     required: false,
   })
