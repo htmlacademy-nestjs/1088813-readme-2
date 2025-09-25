@@ -10,6 +10,7 @@ export class UserEntity implements AuthUser, Entity<string> {
   public lastName: string;
   public avatar?: string;
   public passwordHash: string;
+  public registerDate?: Date;
 
   constructor(user: AuthUser) {
     this.populate(user);
@@ -23,6 +24,7 @@ export class UserEntity implements AuthUser, Entity<string> {
       lastName: this.lastName,
       avatar: this.avatar,
       passwordHash: this.passwordHash,
+      registerDate: this.registerDate,
     };
   }
 
@@ -31,6 +33,8 @@ export class UserEntity implements AuthUser, Entity<string> {
     this.firstName = data.firstName;
     this.lastName = data.lastName;
     this.avatar = data.avatar;
+    this.passwordHash = data.passwordHash;
+    this.registerDate = data.registerDate;
   }
 
   public async setPassword(password: string): Promise<UserEntity> {
@@ -41,5 +45,9 @@ export class UserEntity implements AuthUser, Entity<string> {
 
   public async comparePassword(password: string): Promise<boolean> {
     return compare(password, this.passwordHash);
+  }
+
+  static fromObject(data: AuthUser): UserEntity {
+    return new UserEntity(data);
   }
 }

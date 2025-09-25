@@ -22,7 +22,8 @@
           "buildDepsName": "build-deps",
           "watchDepsName": "watch-deps"
         }
-      }
+      },
+      "exclude": ["libs/shared/config/account-model/*"]
     },
     {
       "plugin": "@nx/webpack/plugin",
@@ -50,6 +51,15 @@
         }
       },
       "exclude": ["libs/shared/rdo/*"]
+    },
+    {
+      "plugin": "@nx/js/typescript",
+      "include": ["libs/shared/config/account-model/*"],
+      "options": {
+        "typecheck": {
+          "targetName": "typecheck"
+        }
+      }
     }
   ],
   "targetDefaults": {

@@ -26,6 +26,9 @@
     },
     {
       "path": "../../libs/helpers/tsconfig.lib.json"
+    },
+    {
+      "path": "../../libs/shared/config/account-model/tsconfig.lib.json"
     }
   ]
 }

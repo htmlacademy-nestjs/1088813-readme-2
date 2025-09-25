@@ -19,6 +19,9 @@
       "path": "../../libs/helpers"
     },
     {
+      "path": "../../libs/shared/config/account-model"
+    },
+    {
       "path": "./tsconfig.app.json"
     }
   ]

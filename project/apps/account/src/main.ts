@@ -7,12 +7,12 @@ import {
   SwaggerModule,
 } from '@nestjs/swagger';
 import { SwaggerTheme, SwaggerThemeNameEnum } from 'swagger-themes';
-
-const DEFAULT_PORT = 3000;
+import { ConfigService } from '@nestjs/config';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  const PORT = process.env.PORT || DEFAULT_PORT;
+  const configService = app.get(ConfigService);
+  const PORT = configService.get('application.port');
 
   const config = new DocumentBuilder()
     .setTitle('Readme 2')
