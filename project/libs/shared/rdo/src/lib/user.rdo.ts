@@ -36,4 +36,11 @@ export class UserRdo {
     example: 'user@user.ru',
   })
   public email: string;
+
+  @Expose()
+  @ApiProperty({
+    description: 'Date of registered user',
+    example: '2025-09-25T14:35:42.189Z',
+  })
+  public registerDate: string;
 }

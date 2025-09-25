@@ -35,6 +35,9 @@
     },
     {
       "path": "./libs/shared/enums"
+    },
+    {
+      "path": "./libs/shared/config/account-model"
     }
   ]
 }
