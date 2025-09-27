@@ -38,6 +38,9 @@
     },
     {
       "path": "./libs/shared/config/account-model"
+    },
+    {
+      "path": "./libs/blog/models"
     }
   ]
 }
